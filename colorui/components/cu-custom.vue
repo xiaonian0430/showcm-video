@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<view class="cu-custom" :style="[{height:CustomBar + 'px'}]">
+		<view class="cu-custom" :style="[{height:CustomBar + 'px', display:display}]">
 			<view class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',]">
 				<view class="action" @tap="BackPage" v-if="isBack">
 					<text class="cuIcon-back" style="color: #FFFFFF;font-weight: 800;"></text>
@@ -49,6 +49,10 @@
 			bgImage: {
 				type: String,
 				default: ''
+			},
+			display: {
+				type: String,
+				default: 'block'
 			},
 		},
 		methods: {

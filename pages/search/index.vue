@@ -136,9 +136,7 @@
 				})
 			},
 			getInfo() {
-				setTimeout(() => {
-					this.$refs.loading.show() // 打开
-				}, 10)
+				this.$refs.loading.show() // 打开
 				uni.request({
 					url: 'https://movie.douban.com/j/subject_suggest?q=' + this.inputInfo + '&page=30',
 					header: {

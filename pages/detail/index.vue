@@ -140,10 +140,8 @@
 			}
 		},
 		onLoad: function(option) {
-			setTimeout(() => {
-				that.$refs.loading.show() // 打开
-			}, 10)
 			var that = this
+			that.$refs.loading.show() // 打开
 			// 获取本地存储的图片
 			uni.getStorage({
 				key: 'storage_bg',

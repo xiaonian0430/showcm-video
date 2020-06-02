@@ -96,9 +96,7 @@
 			this.getMoreNews()
 		},
 		mounted() {
-			setTimeout(function(){
-				this.$refs.loading.show() // 打开
-			}, 10)
+			this.$refs.loading.show() // 打开
 			uni.request({
 				url: 'https://api.douban.com/v2/movie/top250',
 				header: {

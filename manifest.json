@@ -70,5 +70,10 @@
                 "desc" : "根据用户位置智能推荐位置所在的内容"
             }
         }
+    },
+    "mp-toutiao" : {
+        "setting" : {
+            "urlCheck" : false
+        }
     }
 }
